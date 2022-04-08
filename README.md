@@ -1,33 +1,40 @@
-# iDocs
-iDocs is free one page documentation html template built with Bootstrap 4. Which helps you to create your offline and online documentation for your themes, templates, plugins and software.
+# 企业研发经费台账系统说明文档 & Demo
+
+## 项目背景
+
+深圳市科创委高新技术处负责企业申请研发经费的资助与审批。其业务一方面接收到大量来自不同企业的研发经费申请数据，另一方面需要与不同政府部门通过往来函件多次沟通和核对，以确定该企业是否符合研发经费拨付的条件。
+
+## 主要诉求
+信息孤岛严重，沟通文件类型繁多。手工导入费时，审批过程协作性差。
+
+## 数据情况
+2019年的企业研发经费审批数据。作为测试数据集：包含13512家企业的申报数据,以及来自12个部门的142份文件。
+
+## 功能亮点
+### 实现用户自定义台账列、计算公式
+动态解析算法：无论用户如何定义台账列，此算法都可以自动解析台账列中的依赖关系，准确地计算出所有数据。从而实现用户完全自主定义台账列和计算公式。
+自然语言编程：用户使用自然语言来编写计算公式，自然语言会被转化成计算机可以理解的语言，从而计算出结果。
+
+### 实现数据的自动查错、自动导出错误报告
+模糊匹配算法：针对源数据中企业名称存在大量拼写错误，系统可以快速搜索存在拼写错误的企业并给出其正确拼写。
+辅助搜索：综合源数据实现企业名称的查错。
+
+### 实现企业未通过原因自动生成
+自然语言编译算法：将计算机语言编译为自然语言，从而让人类读懂
+
+## 其他特性
+新系统在考虑科创委需求的基础上，充分考虑未来的更多应用场景。新系统被重新定义为一个多部门在线协同处理具有共同主键的数据的数据平台。系统基于Python-Django、Javascript-React、Mysql框架，编译完成后可以快速部署在局域网/广域网的任何一台计算机上。部署完成后，网络中的其他用户/部门凭一个网址就可以访问系统，高效协作完成数据收集、处理工作。
+系统具有快捷的报表导出功能和可视化功能，方便政务领导人员作出决策。使用Python-Django框架，便于后续加入更多机器学习算法，满足政务人员日益增长的需求。
+![image](https://user-images.githubusercontent.com/63912729/162485863-09f89090-8334-4fee-ba44-557c23c48c72.png)
+
 
 ## Demo:
-Click this link for a live demo : <a href="http://demo.harnishdesign.net/html/idocs/demos.html">View a Demo here</a>
+https://bokesyo.github.io/taizhang_documentation/
 
-## How to Use:
-You can read details documentation here - <a href="http://demo.harnishdesign.net/html/idocs/help/">View Documentation Here</a>
 
-## Bugs and Issues
-Have an issue with this template? <a href="https://github.com/harnishdesign/iDocs/issues">Open a new issue here</a>
-
-OR Leave a comment on the <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">Template Overview Page at Harnish Design</a> for general inquiry.
-
-## Credits:
-<ul>
-<li><a href="http://getbootstrap.com/">Bootstrap 4</a></li>
-<li><a href="http://www.jquery.com/">jQuery</a></li>
-<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery easing</a></li>
-<li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
-<li><a href="https://fontawesome.com/">Font Awesome</a></li>
-<li><a href="https://highlightjs.org/">Highlight Js</a></li>
-<li><a href="https://unsplash.com/">Unsplash</a></li>
-</ul>
-
-## Created By:
-<a href="http://www.harnishdesign.net/">Harnish Design</a> | <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">Template Overview Page</a>
+## Based on iDocs
 
 ## Donations & Support
-My Brain needs two urgent coffees to continue working. Buy one or two coffees for me here: https://opencollective.com/idocs
 
 ## License:
 See the <a href="https://github.com/harnishdesign/iDocs/blob/main/LICENSE">LICENSE</a> file for license rights and limitations (MIT).
