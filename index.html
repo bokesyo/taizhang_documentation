@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>企业研发经费业务 - 使用文档</title>
+<meta name="description" content="Your ThemeForest item Name and description">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> 
+        <div>深圳市科创委企业研发经费业务台账系统使用文档</div>
+        </a> 
+		<span class="text-2 ml-2">version 2021.8 stable</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"></li>
+          <li class="social-icons-dribbble"></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">系统概况</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_installation">使用情景</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#idocs_sass">工作流程</a></li>
+			  
+			  <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">功能一览表</a></li>
+           
+          </ul>
+        </li>
+        
+        <li class="nav-item"><a class="nav-link" href="#idocs_content">A 了解台账列</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_typography">1.每一列的组成部分</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_code">2.计算公式</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_table">3.新建台账列</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_icons">4.修改台账列</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_image">5.删除台账列</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_video">6.特殊台账列</a></li>
+          </ul>
+		</li>
+		  
+		  <li class="nav-item"><a class="nav-link" href="#idocs_header">B 导入数据</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#idocs_header">1.开始导入</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">2.收录公司名单</a></li>
+			  
+			<li class="nav-item"><a class="nav-link" href="#pre_check">3.核查企业名称</a></li>
+			  
+			<li class="nav-item"><a class="nav-link" href="#idocs_sidebar">4.正式导入之「报表中不含结论列」</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_footer">5.正式导入之「报表中含结论列」</a></li>
+			  
+			<li class="nav-item"><a class="nav-link" href="#idocs_box_layout">6.数据格式</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_tough_question">7.勘误</a></li>
+			  
+          </ul>
+        </li>
+		  
+        <li class="nav-item"><a class="nav-link" href="#idocs_components">C 计算结果</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_accordion">1.计算前检查</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_tabs">2.生成结果</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">3.可视化</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">4.导出台账与报告</a></li>
+          </ul>
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_faq">D 重置与删除</a></li>
+		  
+        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">E 日志记录</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_support">F 用户管理</a></li>
+		
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+          </ul>
+		</li>
+      </ul>
+    </div>
+	
+	
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>深圳市科创委企业研发经费业务台账系统</h1>
+        <h2><img src="assets/images/introduction.png" alt="" width="1000" height="563" class="img-fluid border"></h2>
+        <p class="lead">使用文档</p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-14">
+				<ul class="list-unstyled">
+					<li><strong>版本:</strong> 2021.8</li>
+					<li><a href="http://www.sribd.cn" target="_blank">深圳市大数据研究院 政企大数据实验室</a></li>
+					<li><a href="#" target="_blank">开发人员: 胥博凯</a></li>
+				</ul>
+			</div>
+		</div>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+        <section id="idocs_installation">
+          <h2>使用情景</h2>
+          <p class="lead">通用情景: 本系统是一个<strong>多部门在线协同</strong>处理具有<strong>共同主键的数据</strong>的数据平台。</p>
+          <ol>
+            <li><strong>多部门</strong>协同: 允许位于不同地方的多个用户同时访问。</li>
+            <li><strong>在线</strong>处理: 每个部门将数据准备好后，上传到系统后，可以利用系统提供的数据处理功能进行后续操作，无需手动处理。</li>
+            <li>增强的数据<strong>导入</strong>、<strong>检查</strong>、<strong>反馈</strong>、<strong>纠错</strong>功能，确保数据全面、准确、无遗漏地导入系统。</li>
+            <li>强大的<strong>自定义</strong>能力: 用户可以<strong>自定义列</strong>和列的属性，并且可以<strong>定义运算法则</strong>。</li>
+            <li>针对企业研发经费流程深度优化，尽力满足一切需求。</li>
+          </ol>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>这里的<strong>主键</strong>的含义是: 一条数据中用来标识其身份的<strong>列</strong>。例如，现在有一张表，其中有<strong>企业名称</strong>，企业申报经费，企业的规模等，这里<strong>企业名称</strong>就是主键。&nbsp;</p>
+          <p>&nbsp;</p>
+        </section>
+        
+		<hr class="divider">
+		        
+		<!-- Sass
+		============================ -->
+        <section id="idocs_sass">
+          <h2>工作流程          </h2>
+          <p><img src="assets/images/lifeSpan.png" alt="" width="1500" height="2698" class="img-fluid border"></p>
+        </section>
+        
+		<hr class="divider">
+		  
+        <!-- HTML Structure
+		============================ -->
+        <section id="idocs_html_structure">
+          <h2>功能一览表          </h2>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th width="14%" scope="col">所在页面</th>
+                <th width="18%" scope="col">功能名称</th>
+                <th width="68%" scope="col">描述</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">导入</th>
+                <td>报表读取</td>
+				  <td>支持 <code>Excel (xls, xlsx)</code>, <code>CSV</code>, <code>TXT</code> 文件; <code>Excel</code> 支持文件内有多张表; 报表的布局和格式无要求</td>
+              </tr>
+              <tr>
+                <th scope="row">导入</th>
+                <td>表格数据检查</td>
+                <td>检查<strong>不该为空</strong>的数据是否为空；根据<strong>台账列的设定</strong>检查导入的数据是否符合格式要求; 筛选掉报表中的<strong>不在台账中</strong>的企业数据</td>
+              </tr>
+              <tr>
+                <th scope="row">导入</th>
+                <td>多种导入方式</td>
+                <td>提供 3 种导入方式: 1. 收录企业名称名单; 2. 报表不含结论列 (报表是一份名单); 3. 报表包含结论列 (报表是一份含有主键的数据表)</td>
+              </tr>
+              <tr>
+                <th scope="row">导入</th>
+                <td>核查企业名称</td>
+                <td>经过表格数据检查后，如发现某些公司未被台账收录，系统将会<strong>自动搜索已被收录的近似名称的企业</strong>/或使用补充列进行查询，把报表按照企业分为三份，一份可以直接导入，一份可以检查后再导入，一份无导入必要。</td>
+              </tr>
+              <tr>
+                <th scope="row">导入</th>
+                <td>生成数据核对名单</td>
+                <td>经过表格数据检查后，如发现不合格的数据，系统将会导出一份<strong>只含有不合格数据</strong>的核对名单，供用户填写完整，然后按相同导入方式再次导入。</td>
+              </tr>
+              <tr>
+                <th scope="row">勘误</th>
+                <td>修改已被收录公司名称</td>
+                <td>如果在检查中发现已被收录的公司名称有误，那么可以通过这个功能来修改</td>
+              </tr>
+              <tr>
+                <th scope="row">台账列</th>
+                <td>新建列</td>
+                <td>用户可自行新建列，自定义列的名称、数据类型、属性、默认值、<strong>本列的值的计算公式</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">台账列</th>
+                <td>删除列</td>
+                <td>用户可删除已有的列，列包含的所有数据也将一并删除</td>
+              </tr>
+              <tr>
+                <th scope="row">台账列</th>
+                <td>修改列</td>
+                <td>用户可修改已有的列，可修改默认值、<strong>本列的值的计算公式</strong>，但不可修改列名，属性，数据类型</td>
+              </tr>
+              <tr>
+                <th scope="row">台账列</th>
+                <td>表达式编辑器</td>
+                <td>辅助业余用户输入专业表达式的编辑器</td>
+              </tr>
+              <tr>
+                <th scope="row">台账列</th>
+                <td>为台账列定义多种情况</td>
+                <td>用户定义多种情况，根据不同情况采取不同的计算方法</td>
+              </tr>
+              <tr>
+                <th scope="row">设置</th>
+                <td>系统重置</td>
+                <td>删除所有数据、台账列，并使用预先定义的模版还原系统，供新一年的审批</td>
+              </tr>
+              <tr>
+                <th scope="row">设置</th>
+                <td>删除全部数据</td>
+                <td>保留台账列信息，单纯删除已有的数据</td>
+              </tr>
+              <tr>
+                <th scope="row">结果</th>
+                <td>计算数据</td>
+                <td>根据已有的<strong>独立列</strong>的信息，计算出在台账列中的<strong>需要根据其他列来确定</strong>的列中的数据，之后判定是否通过审批，以及资助的金额是多少，以及其他根据</td>
+              </tr>
+              <tr>
+                <th scope="row">结果</th>
+                <td>对未通过的企业给出原因</td>
+                <td>在导出台账为报表时，对于每个未通过的企业，系统都会为它们编辑一条未通过的原因，可以供企业进行反馈。</td>
+              </tr>
+              <tr>
+                <th scope="row">结果</th>
+                <td>企业通过情况、资助金额的可视化</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th scope="row">结果</th>
+                <td>将所有数据导出</td>
+                <td>以 Excel 表格 (xls) 的形式导出所有数据库中的数据</td>
+              </tr>
+              <tr>
+                <th scope="row">-</th>
+                <td>日志记录</td>
+                <td>用户的所有操作都会被记录到日志中</td>
+              </tr>
+              <tr>
+                <th scope="row">日志</th>
+                <td>查看所有日志</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Changelog
+		============================ -->
+		
+        <section id="idocs_changelog"></section>    
+		  
+		  <hr class="divider">
+		
+		  
+  		<!-- Content
+		============================ -->
+        <section id="idocs_content">
+          <h2>了解台账列</h2>
+          <p class="lead mb-5">了解如何自主设置台账列和它们的计算公式</p>
+        </section>
+		  
+		<!-- Typography
+		============================ -->
+		<section id="idocs_typography">
+		  <h2>每一列的组成部分</h2>
+		  <p class="text-4">台账列包括 5 个组成成分:</p>
+		  <h4>名称，数据类型，性质，默认值，计算公式</h4>
+		  <p>详细说明:</p>
+		  <table class="table table-bordered table-striped">
+		    <thead>
+		      <tr>
+		        <th width="14%" scope="col">组成成分</th>
+		        <th width="18%" scope="col">说明</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">名称</th>
+		        <td>每个台账列都有一个名称，是唯一的，简洁地表述这一列的内容</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">数据类型</th>
+		        <td>系统设置了三种数据类型，分别为：是/否型（只能存储 「是」或「否」）；数值型（只能存储数字）；文字型（可以存储任何文本）。一个列只能选定一种数据类型</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">性质</th>
+		        <td>系统提供两种性质，分别为：独立列（这一列的数据是用户上传的、从<strong>外部获取</strong>的）；
+		          <label> </label>
+		          <label>
+              由其他列得出的结论（是根据上传的数据<strong>进一步计算</strong>而来的）</label>
+		          。一个列只能选定一种数据类型</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">默认值</th>
+		        <td><span class="badge badge-danger text-uppercase mr-2">Note</span>为了防止出现数据缺失，我们要求为每一列设置一个默认值，当数据缺失的时候可以利用默认值填充到数据空缺处。</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">计算公式</th>
+		        <td>如果这一列的性质是「由其他列得出的结论」，那么用户需要告诉系统这一列的值是怎么计算而来的，需要提供一些计算公式</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- Code
+		============================ -->
+		<section id="idocs_code">
+		  <h2>计算公式</h2>
+		  <p class="text-4">如果这一列是由其他列来确定的，那么需要告诉系统这一列的值是如何计算出来的</p>
+		  
+		  <h3 class="mt-5">术语: 情况、条件、算式</h3>
+		  <p>本系统考虑到实际需求，提供了「定义多种情况」的功能。</p>
+		  <p><img src="assets/helper-images/049.png" alt="" width="600" height="273" class="img-fluid border"></p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>对于<strong>每一种情况</strong>，都有一个<strong>「条件」</strong>和<strong>「算式」</strong>。</p>
+		  <p><strong>「条件」</strong>指的是当<strong>满足什么条件</strong>时<strong>（当条件表达式的值是「是」）</strong>，应该用下面这种<strong>「算式」</strong>算这个值。 </p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>所以，当定义「算式」时，<strong>首先</strong>要定义「条件」。		  </p>
+		  <p>定义「条件」和「算式」时，都要用到下面的表达式编辑器。</p>
+		  <h3 class="mt-5">表达式编辑器</h3>
+		  <p>为了更好地辅助非专业人员输入计算表达式，本系统提供了一个用户友好的表达式编辑器。</p>
+		  <p><img src="assets/helper-images/050.png" alt="" width="800" height="405" class="img-fluid border"></p>
+		  <p>在这里，用户可以方便地把「台账列名」、「运算符号」、「数值」、「文字」、「是/否」、括号等加入到自定义表达式中。</p>
+		  <p>例如:</p>
+		  <h6>A 在「使用列名」一栏，可以通过点击相应列名，直接添加到表达式中去：</h6>
+		  <p><img src="assets/helper-images/055.png" alt="" width="500" height="357" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>B 在「使用运算符号」一栏，可以通过点击相应运算符号，直接添加到表达式中去：</h6>
+		  <p><img src="assets/helper-images/052.png" alt="" width="500" height="405" class="img-fluid border"></p>
+		  <p>也可以通过下方的「快捷方式」，加入常用的几种符号，只需按下相应按钮即可：</p>
+		  <p><img src="assets/helper-images/056.png" alt="" width="500" height="78" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>C 在「使用数值」一栏，可以通过输入数字，按下「对勾」按钮，直接添加到表达式中去：</h6>
+		  <p><img src="assets/helper-images/053.png" alt="" width="500" height="355" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>D 在「使用文字」一栏，可以通过输入数字，按下「对勾」按钮，直接添加到表达式中去：</h6>
+		  <p><img src="assets/helper-images/054.png" alt="" width="500" height="366" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>E 在「使用是/否值」一栏，可以通过按相应的按钮（是、否），直接添加到表达式中去：</h6>
+		  <p><img src="assets/helper-images/051.png" alt="" width="500" height="317" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <p>下面预览一下刚刚的操作都会如何表现出来：</p>
+		  <p><img src="assets/helper-images/057.png" alt="" width="800" height="390" class="img-fluid border"></p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>这是一串无意义的表达式，仅做演示用。表达式语法会在下面的内容中提到。</p>
+		  <p>&nbsp;</p>
+		  <h3 class="mt-5"><strong style="color: #FF0004 ">*</strong> 计算公式语法		  </h3>
+		  <h5>A 逻辑计算符号 (1)</h5>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="8%" scope="col">结果</th>
+		        <th width="22%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">是/否型</th>
+		        <th scope="row"><code>台账列名-是/否型</code>&nbsp;<code>符号-等于</code>&nbsp;<code>是/否</code>&nbsp;</th>
+		        <td><code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;</td>
+		        <td><code> 是/否型</code></td>
+		        <td>表示满足「这家企业列入黑名单」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">数值型</th>
+		        <th scope="row"><code>台账列名-数值型</code>&nbsp;<code>符号-等于</code>&nbsp;<code>数字</code>&nbsp;</th>
+		        <td><code>企业申报研发经费(万元)</code>&nbsp;<code>等于</code>&nbsp;<code>500</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示这家企业满足「申报研发经费为 500 万元」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">文字型</th>
+		        <th scope="row"><code>台账列名-文字型</code>&nbsp;<code>符号-等于</code>&nbsp;<code>文字</code>&nbsp;</th>
+		        <td><code>专家审核意见</code>&nbsp;<code>等于</code>&nbsp;<code>建议复查</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示这家企业满足「专家审核建议复查」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row"> 是/否型 的简化用法</th>
+		        <th scope="row"><code>台账列名-是/否型</code>&nbsp;&nbsp;</th>
+		        <td><code>是否列入黑名单</code>&nbsp;（<span class="badge badge-danger text-uppercase mr-2">Note</span>是/否型 可以省略<code>等于</code>&nbsp;<code>是</code>&nbsp;）</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示满足「这家企业列入黑名单」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">是/否型</th>
+		        <th scope="row"><code>台账列名-是/否型</code>&nbsp;<code>符号-不等于</code>&nbsp;<code>是/否</code>&nbsp;</th>
+		        <td><code>是否列入黑名单 </code>&nbsp;<code>不等于</code>&nbsp;<code>是</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示不满足「这家企业列入黑名单」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">文字型</th>
+		        <th scope="row"><code>台账列名-文字型</code>&nbsp;<code>符号-不等于</code>&nbsp;<code>文字</code>&nbsp;</th>
+		        <td><code>专家审核意见</code>&nbsp;<code>不等于</code>&nbsp;<code>建议复查</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示这家企业不满足「专家审核建议复查」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">数值型</th>
+		        <th scope="row"><code>台账列名-数值型</code>&nbsp;<code>符号-大于/小于/大于等于/小于等于/不等于</code>&nbsp;<code>数字</code>&nbsp;</th>
+		        <td><code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示这家企业满足「申报研发经费小于 500 万元」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">两个台账列名</th>
+		        <th scope="row"><code>台账列名1-数值型</code>&nbsp;<code>符号-等于/大于/小于</code>&nbsp;<code>台账列名2-数值型</code>&nbsp;</th>
+		        <td><code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>税务局反馈研发费用(万元)</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示这家企业满足「申报研发经费小于税务局反馈研发费用」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <h5>B 逻辑计算符号 (2)</h5>
+		  <p>此处括号的作用就是确定先后顺序、优先级，善用括号，方可实现更复杂的判断。</p>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="8%" scope="col">结果</th>
+		        <th width="22%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">两个任意条件</th>
+		        <th scope="row"><code>(</code>&nbsp;<code>条件1</code> <code>)</code> <code>符号-且</code> <code>(</code>&nbsp;<code>条件2</code>&nbsp;<code>)</code></th>
+		        <td><code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>且</code> <code>(</code>&nbsp;<code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;<code>)</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示同时满足「这家企业列入黑名单，研发经费小于500万元」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">两个任意条件</th>
+		        <th scope="row"><code>(</code>&nbsp;<code>条件1</code> <code>)</code> <code>符号-或</code> <code>(</code>&nbsp;<code>条件2</code>&nbsp;<code>)</code></th>
+		        <td><code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>或</code> <code>(</code>&nbsp;<code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;<code>)</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示满足「这家企业列入黑名单，研发经费小于500万元」的条件之一</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">多个任意条件</th>
+		        <th scope="row"><code>(</code>&nbsp;<code>条件1</code> <code>)</code> <code>符号-或</code> <code>(</code>&nbsp;<code>条件2</code> <code>)</code>&nbsp;<code>  符号-或</code> <code>(</code>&nbsp;<code>条件3</code>&nbsp;<code>)</code></th>
+		        <td><code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>或</code> <code>(</code>&nbsp;<code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;<code>)</code> <code>或</code> <code>(</code>&nbsp;<code>专家审核意见</code>&nbsp;<code>等于</code>&nbsp;<code>建议复查</code>&nbsp;&nbsp;<code>)</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示满足「这家企业列入黑名单，研发经费小于500万元，专家审核建议复查」的条件之一</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">多个任意条件</th>
+		        <th scope="row"><code>(</code>&nbsp;<code>条件1</code> <code>)</code> <code>符号-且</code> <code>(</code>&nbsp;<code>条件2</code> <code>)</code>&nbsp;<code> 符号-且</code> <code>(</code>&nbsp;<code>条件3</code>&nbsp;<code>)</code></th>
+		        <td><code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>且</code> <code>(</code>&nbsp;<code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;<code>)</code> <code>且</code> <code>(</code>&nbsp;<code>专家审核意见</code>&nbsp;<code>等于</code>&nbsp;<code>建议复查</code>&nbsp;&nbsp;<code>)</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示同时满足「这家企业列入黑名单，研发经费小于500万元，专家审核建议复查」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">高阶用法</th>
+		        <th scope="row"><code>(</code>&nbsp;<code>(</code>&nbsp;<code>条件1</code> <code>)</code> <code>符号-或</code> <code>(</code>&nbsp;<code>条件2</code>&nbsp;<code>)</code><code>)</code> <code>符号-且</code> <code>(</code>&nbsp;<code>条件3</code> <code>)</code>&nbsp;</th>
+		        <td><code>(</code>&nbsp;<code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>或</code> <code>(</code>&nbsp;<code>专家审核意见</code>&nbsp;<code>等于</code>&nbsp;<code>建议复查</code>&nbsp;&nbsp;<code>)</code>&nbsp;<code>)</code> <code>且</code> <code>(</code>&nbsp;<code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;<code>)</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示先满足「研发经费小于500万元，专家审核建议复查」其中之一，又要再满足「这家企业列入黑名单」</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">是否型 的 简化用法（可以省去括号）</th>
+		        <th scope="row">&nbsp;<code>条件1</code>&nbsp;<code>符号-且</code> <code>(</code>&nbsp;<code>条件2</code>&nbsp;<code>)</code></th>
+		        <td><code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>且</code>&nbsp;<code>是否列入黑名单</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示同时满足「这家企业列入黑名单，研发经费小于500万元」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <h5>C 逻辑计算符号 (3)</h5>
+		  <p>一方面可以用「不等于」符号，另一方面也可以用更通用的「不」</p>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="8%" scope="col">结果</th>
+		        <th width="22%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">是/否型</th>
+		        <th scope="row"><code>符号-不</code>&nbsp;&nbsp;<code>台账列名-是/否型</code></th>
+		        <td><code>不</code>&nbsp;<code>是否列入黑名单</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>表示不满足「这家企业列入黑名单」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">任意条件</th>
+		        <th scope="row"><code>符号-不</code>&nbsp;<code>(</code> <code>条件1</code>&nbsp;<code>)</code></th>
+		        <td><code> 不</code> <code> (</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>等于</code>&nbsp;<code>500</code>&nbsp;<code>)</code></td>
+		        <td><code>是/否型</code></td>
+		        <td>表示这家企业不满足「申报研发经费为 500 万元」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <h5>D 数值计算符号 (1)</h5>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="7%" scope="col">结果</th>
+		        <th width="23%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">数值型</th>
+		        <th scope="row">&nbsp;<code>台账列名-数值型  </code>&nbsp;<code>符号-加/减/乘/除/整除</code>&nbsp;<code>数值</code></th>
+		        <td>&nbsp;<code>企业申报研发费用(万元)</code>&nbsp;<code>减</code>&nbsp;<code>100</code></td>
+		        <td><code>数值型</code></td>
+		        <td>表示不满足「这家企业列入黑名单」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">数值型</th>
+		        <th scope="row"><code>台账列名-数值型 </code>&nbsp;<code>符号-加/减/乘/除/整除 </code>&nbsp;<code>台账列名-数值型</code></th>
+		        <td><code>企业申报研发费用(万元)</code>&nbsp;<code>减</code>&nbsp;<code>专家核定研发费用(万元)</code></td>
+		        <td><code>数值型</code></td>
+		        <td>表示这家企业不满足「申报研发经费为 500 万元」的条件</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <h5>E 数值计算符号 (2)</h5>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="7%" scope="col">结果</th>
+		        <th width="23%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">多个数值型表达式</th>
+		        <th scope="row">&nbsp;&nbsp;<code>符号-取最大值</code>&nbsp;&nbsp;<code>(</code>&nbsp;<code>数值型表达式1</code>&nbsp;<code>逗号</code>&nbsp;<code>数值型表达式2</code>&nbsp;
+					<code>逗号</code>&nbsp;<code>更多表达式</code>&nbsp;<code>)</code></th>
+		        <td><code>取最大值</code>&nbsp;&nbsp;<code>(</code>&nbsp;<code>500</code>&nbsp;<code>,</code>&nbsp;<code>企业申报研发费用(万元)</code>&nbsp; <code>,</code>&nbsp;<code>专家审核研发费用+100</code>&nbsp;<code>)</code> （<span class="badge badge-danger text-uppercase mr-2">Note</span>不要漏加逗号）</td>
+		        <td><code>数值型</code></td>
+		        <td>得到「500，企业申报研发费用，专家核定研发费用+100」中的最大值</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">多个数值型表达式</th>
+		        <th scope="row">&nbsp;<code>符号-取最小值</code>&nbsp;&nbsp;<code>(</code>&nbsp;<code>数值型表达式1</code>&nbsp;<code>逗号</code>&nbsp;<code>数值型表达式2</code>&nbsp; <code>逗号</code>&nbsp;<code>更多表达式</code>&nbsp;<code>)</code></th>
+		        <td><code>取最小值</code>&nbsp;&nbsp;<code>(</code>&nbsp;<code>500</code>&nbsp;<code>,</code>&nbsp;<code>企业申报研发费用(万元)</code>&nbsp; <code>,</code>&nbsp;<code>专家审核研发费用+100</code>&nbsp;<code>)</code> （<span class="badge badge-danger text-uppercase mr-2">Note</span>不要漏加逗号）</td>
+		        <td><code>数值型</code></td>
+		        <td>得到「500，企业申报研发费用，专家核定研发费用+100」中的最小值</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">取绝对值</th>
+		        <th scope="row">&nbsp;<code>符号-取绝对值</code>&nbsp;&nbsp;<code>(</code>&nbsp;<code>数值型表达式1</code>&nbsp;<code>)</code></th>
+		        <td><code>取最小值</code>&nbsp;&nbsp;<code>(</code>&nbsp;<code>专家审核研发费用-500</code>&nbsp;<code>)</code></td>
+		        <td><code>数值型</code></td>
+		        <td>得到「专家核定研发费用-500」中的绝对值</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <p>&nbsp;</p>
+		  <h5>F 处理文本</h5>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>取前一、二、三位 这一运算符号只能用在 「文本型」数据后面		  </p>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="7%" scope="col">结果</th>
+		        <th width="23%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">文字型</th>
+		        <th scope="row">&nbsp;&nbsp;<code>台账列名-数值型</code>&nbsp;<code>符号-取前一位</code>&nbsp;</th>
+		        <td><code>组织机构代码</code> <code>取前一位</code>&nbsp;</td>
+		        <td><code>文字型</code></td>
+		        <td>取出一个文本的前一个文字</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">文字型</th>
+		        <th scope="row">&nbsp;&nbsp;<code>台账列名-数值型</code>&nbsp;<code>符号-取前两位</code>&nbsp;</th>
+		        <td><code>组织机构代码</code> <code>取前两位</code>&nbsp;</td>
+		        <td><code>文字型</code></td>
+		        <td>取出一个文本的前两个文字</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">文字型</th>
+		        <th scope="row"><code>台账列名-数值型</code>&nbsp;<code>符号-取前三位</code>&nbsp;</th>
+		        <td><code>组织机构代码</code> <code>取前三位</code>&nbsp;</td>
+		        <td><code>文字型</code></td>
+		        <td>取出一个文本的前三个文字</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">文字型</th>
+		        <th scope="row"><code>文本</code>&nbsp;<code>符号-在...中</code>&nbsp;<code>台账列名-数值型</code>&nbsp;</th>
+		        <td><code>异常</code>&nbsp;<code>在...中</code>&nbsp;<code>专家评审意见</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>判断「异常」字样是否出现在了一个台账列中</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <p>&nbsp;</p>
+		  <h5>G 高级数据结构：列表		  </h5>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>不要漏加逗号		  </p>
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th width="18%" scope="col">适用于</th>
+		        <th width="18%" scope="col">语法</th>
+		        <th width="34%" scope="col">举例</th>
+		        <th width="7%" scope="col">结果</th>
+		        <th width="23%" scope="col">含义</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <th scope="row">几个元素</th>
+		        <th scope="row">&nbsp;&nbsp;<code>[</code>&nbsp;&nbsp;<code>元素1</code> <code>,</code>&nbsp;&nbsp;<code>元素2</code> <code>,</code>&nbsp;&nbsp;<code>元素3</code>&nbsp;<code>]</code>&nbsp;</th>
+		        <td><code>行业代码(数据类型:文本)</code>  <code>取前两位</code>&nbsp;&nbsp;<code>在...中</code>&nbsp;<code>[</code>&nbsp;<code>16(文本)</code>&nbsp;<code>,</code>&nbsp;<code>17(文本)</code>&nbsp;<code>,</code>&nbsp;<code>51(文本)</code>&nbsp;<code>]</code>&nbsp;</td>
+		        <td><code>是/否型</code></td>
+		        <td>行业代码的前两位是否在列表[16 17 51] 中</td>
+	          </tr>
+		      <tr>
+		        <th scope="row">&nbsp;</th>
+		        <th scope="row">&nbsp;</th>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+		        <td>&nbsp;</td>
+	          </tr>
+	        </tbody>
+	      </table>
+		  <p>&nbsp;</p>
+		  <p>&nbsp;</p>
+		  <h3>使用原则</h3>
+		  <h4>关于条件</h4>
+		  <h5>只有当这个「条件」的运算结果等于 <code>是</code> 时，条件被看作成立。</h5>
+		  <p>比如，这里定义条件为：<code>(</code>&nbsp;<code>企业申报研发经费(万元)</code>&nbsp;<code>小于</code>&nbsp;<code>500</code>&nbsp;<code>)</code> <code>且</code> <code>(</code>&nbsp;<code>是否列入黑名单</code>&nbsp;<code>等于</code>&nbsp;<code>是</code>&nbsp;<code>)</code> ，那么只有当这个条件的运算结果等于<code>是</code> 的时候，这个条件才成立。</p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>定义条件时，一定要确保它的结果是<strong>「是/否型」</strong>，这是非常重要的。</p>
+		  <p>&nbsp;</p>
+		  <h4>关于这一列的值</h4>
+		  <h5>条件成立，这一列的值才等于这个「条件」对应的「算式」的值。		</h5>
+		  <p>上面所述当「条件」等于 <code>是</code> 时，才会计算它对应的「算式」。</p>
+		  <p>&nbsp;</p>
+		  <h4>关于算式</h4>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>定义算式时，不需要额外写：<code>这一列的值</code>&nbsp;<code>等于</code>&nbsp;<code>某表达式</code>，只需要写一个可以计算出来的式子 <code>某表达式</code> 即可。</p>
+		  <p>&nbsp;</p>
+		  <p>&nbsp;</p>
+		  <h3>范例</h3>
+		  <h4>这里以「通过审批」这一列作为演示:</h4>
+		  <p>在「台账列」页面找到「通过审批」这一台账列，点击「编辑按钮」。</p>
+		  <p><img src="assets/helper-images/069.png" alt="" width="900" height="364" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <p>在打开的页面找到「列的值如何确定」这一行。</p>
+		  <p>&nbsp;</p>
+		  <h4>1. 定义第一个情况</h4>
+		  <h6>1.1 定义第一个情况的「条件」：按下「条件」前面的「编辑」按钮，打开编辑器。</h6>
+		  <p><img src="assets/helper-images/058.png" alt="" width="600" height="212" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>1.2 打开编辑器后，输入以下项目：这里的条件转换为自然语言就是：企业申报研发费用大于500万元，若无其他<strong>联用条件</strong>，可不加（，）括号</h6>
+		  <p><img src="assets/helper-images/059.png" alt="" width="600" height="316" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>1.3 点击完成按钮，保存条件。</h6>
+		  <p><img src="assets/helper-images/060.png" alt="" width="300" height="301" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>1.4 保存后看到：条件已经有了</h6>
+		  <p><img src="assets/helper-images/061.png" alt="" width="600" height="229" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <p>下一步，点击下面一行 这一列等于 之前的「编辑」按钮，输入这一条件成立时，这一列应等于的「算式」：</p>
+		  <p>&nbsp;</p>
+		  <h6>1.5 输入下面的内容，转换成自然语言就是，要同时满足不在黑名单中，并且还要是高新技术企业。</h6>
+		  <p><img src="assets/helper-images/062.png" alt="" width="600" height="257" class="img-fluid border"></p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>这里要注意，这个「算式」的结果算出来，应该是「是/否型」，只会是「是」或「否」。</p>
+		  <p>这也是我们所期望的。</p>
+		  <p>因为这一列就是「通过审批」，「是」代表通过了，「否」代表没有通过。</p>
+		  <p>&nbsp;</p>
+		  <h6>1.6 点击完成，保存算式，看到：</h6>
+		  <p><img src="assets/helper-images/063.png" alt="" width="600" height="248" class="img-fluid border"></p>
+		  <p>这一种情况已经定义好了。</p>
+		  <p>&nbsp;</p>
+		  <h6>1.7 点击「新增情况」按钮，定义下一种情况。</h6>
+		  <p><img src="assets/helper-images/064.png" alt="" width="350" height="244" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h4>2. 定义第二个情况</h4>
+		  <h6>2.1 点击「条件」前面的「编辑」按钮：</h6>
+		  <p><img src="assets/helper-images/065.png" alt="" width="600" height="257" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <p>&nbsp;</p>
+		  <h6>2.2 输入下面的「条件」，转换成自然语言就是，当企业申报研发费用小于500万元时。</h6>
+		  <p><img src="assets/helper-images/066.png" alt="" width="600" height="277" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h6>2.3 按「完成」按钮，保存「条件」。之后再定义「算式」。转换成自然语言就是，不存在争议纠纷，并且是高新技术企业。</h6>
+		  <p><img src="assets/helper-images/067.png" alt="" width="600" height="243" class="img-fluid border"></p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>这个「算式」的结果算出来，应该是「是/否型」，只会是「是」或「否」。</p>
+          <p>这也是我们所期望的。</p>
+          <p>因为这一列就是「通过审批」，「是」代表通过了，「否」代表没有通过。</p>
+		  <p>&nbsp;</p>
+		  <h6>2.4 按「完成按钮」保存「算式」。</h6>
+		  <p>&nbsp;</p>
+		  <h4>3. 到这里就完成了不同情况的定义。		  </h4>
+		  <p class="alert alert-info">如果需要帮助，请联系开发人员 (电子邮件: bokaixu@link.cuhk.edu.cn)。		</p>
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- Table
+		============================ -->
+		<section id="idocs_table">
+		<h2>新建台账列</h2>
+		<p class="text-4">新建一个列的详细步骤</p>
+		<h3 class="mt-5">摸底</h3>
+		<p>在新建这个列之前，要思考的问题是，这一列：</p>
+		<ul>
+		  <li>用来存储什么数据？</li>
+		  <li>数据是什么类型？是文本、是否型，还是数值？</li>
+		  <li>数据是怎么得到的？是从外部获取的，还是有一些已知数据计算而来的？</li>
+		  </ul>
+		<h3>&nbsp;</h3>
+		<h3>操作</h3>
+		<h5>1. 在「台账列」页面，点击「新建列」按钮。</h5>
+		<p><img src="assets/helper-images/070.png" alt="" width="500" height="268" class="img-fluid border"></p>
+		<h5>2. 在打开的窗口中，逐一填写这一列的相关信息：</h5>
+		<p><img src="assets/helper-images/071.png" alt="" width="800" height="510" class="img-fluid border"></p>
+		<h6>列的名称、数据类型、性质、默认值的介绍：</h6>
+		<table class="table table-bordered table-striped">
+		  <thead>
+		    <tr>
+		      <th width="14%" scope="col">组成成分</th>
+		      <th width="18%" scope="col">说明</th>
+		      </tr>
+		    </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">名称</th>
+		      <td>每个台账列都有一个名称，是唯一的，简洁地表述这一列的内容</td>
+		      </tr>
+		    <tr>
+		      <th scope="row">数据类型</th>
+		      <td>系统设置了三种数据类型，分别为：是/否型（只能存储 「是」或「否」）；数值型（只能存储数字）；文字型（可以存储任何文本）。一个列只能选定一种数据类型</td>
+		      </tr>
+		    <tr>
+		      <th scope="row">性质</th>
+		      <td>系统提供两种性质，分别为：独立列（这一列的数据是用户上传的、从<strong>外部获取</strong>的）；
+		        <label> </label>
+		        <label> 由其他列得出的结论（是根据上传的数据<strong>进一步计算</strong>而来的）</label>
+		        。一个列只能选定一种数据类型</td>
+		      </tr>
+		    <tr>
+		      <th scope="row">默认值</th>
+		      <td><span class="badge badge-danger text-uppercase mr-2">Note</span>为了防止出现数据缺失，我们要求为每一列设置一个默认值，当数据缺失的时候可以利用默认值填充到数据空缺处。</td>
+		      </tr>
+		    <tr>
+		      <th scope="row">计算公式</th>
+		      <td>如果这一列的性质是「由其他列得出的结论」，那么用户需要告诉系统这一列的值是怎么计算而来的，需要提供一些计算公式</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		<h6>关于列的值如何确定（计算公式），请<a href="#idocs_code">点击这里查看对应章节的详细介绍</a>。</h6>
+		<p>&nbsp;</p>
+		<p><img src="assets/helper-images/072.png" alt="" width="800" height="493" class="img-fluid border"></p>
+		<p>&nbsp;</p>
+		<h5>3. 全部填好之后，进入下一步。</h5>
+		<p><img src="assets/helper-images/073.png" alt="" width="800" height="491" class="img-fluid border"></p>
+		<p>确认无误，点击确定按钮。将自动新增这一列。</p>
+		<p>&nbsp;</p>
+		<h5>4. 查看结果</h5>
+		<p><img src="assets/helper-images/074.png" alt="" width="800" height="88" class="img-fluid border"></p>
+		<p>这样就完成了新建列。		</p>
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- Icons
+		============================ -->
+        <section id="idocs_icons">
+          <h2>修改台账列</h2>
+          <p><strong>在「台账列」页面中，看到每一个项目后面都有「编辑」按钮，点击按钮，就可以编辑了。</strong>          </p>
+          <p><img src="assets/helper-images/076.png" alt="" width="46" height="26" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>修改台账列时，列的名称、数据类型、性质都不能更改。因为任意的修改可能会对之前定义的台账列产生波及影响。</p>
+          <p>如果需要修改这些属性，请另外新建台账列。</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>另外新建列之后，不要忘<strong>了建立新的计算公式中的依赖关系</strong>。</p>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+        <section id="idocs_image">
+          <h2>删除台账列          </h2>
+          <p class="text-4">删除不再使用的台账列</p>
+          <p><strong>在「台账列」页面中，看到每一个项目后面都有「删除」按钮，点击按钮，在询问框中点击确定，就可以删除了。</strong></p>
+          <p><img src="assets/helper-images/075.png" alt="" width="300" height="160" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>任意的删除可能会对之前定义的台账列产生波及影响。          </p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>删除列之后，不要忘了<strong>删除旧的计算公式中的依赖关系</strong>，否则，计算结果将会出现问题。 </p>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Video
+		============================ -->
+        <section id="idocs_video">
+          <h2>特别台账列</h2>
+          <p>本系统中的台账列分为两类：</p>
+          <p>&nbsp;</p>
+          <h4>A 特别列</h4>
+          <p class="text-4">系统保留了几个用途特殊的台账列，不可删除，但可以编辑。 </p>
+          <p><img src="assets/helper-images/077.png" alt="" width="800" height="270" class="img-fluid border"></p>
+          <p>这些列以黑体显示，被安置在「台账列」的最前方。这些列被保留是有原因的。</p>
+          <p>&nbsp;</p>
+          <h6>「通过审批」列：</h6>
+          <p>存储<strong>是否通过</strong>本年度的审批结果。<strong>用户在这里可以<span class="badge badge-danger text-uppercase mr-2">Note</span>自定义审核通过的标准。</strong></p>
+          <p>&nbsp;</p>
+          <h6>「资助金额」列：</h6>
+          <p>存储通过审批企业的资助金额。<strong>用户在这里可以<span class="badge badge-danger text-uppercase mr-2">Note</span>自定义资助金额的发放标准。</strong></p>
+          <p>&nbsp;</p>
+          <h6>「未通过审核原因」列：</h6>
+          <p>存储企业未通过审批的原因。系统将自动写入原因。<span class="badge badge-danger text-uppercase mr-2">Note</span><strong>用户无需对本列进行操作</strong>。 </p>
+          <p>&nbsp;</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>用户可以自主修改这些特殊列，但是用户无权限删除这些列。</p>
+          <p>&nbsp;</p>
+          <h4>B 用户可完全管理的普通列</h4>
+          <p class="text-4"><img src="assets/helper-images/078.png" alt="" width="800" height="341" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>普通列完全由用户控制，用户可以增添、删除、修改这些列的属性。        </p>
+          <p>&nbsp;</p>
+          <h3>视频教学          </h3>
+          <video width="1000" height="600" controls="controls" >
+            <source src="assets/helper-videos/设置台账列，设置通过审批条件、资助金额.mp4" type="video/mp4">
+          </video>
+          <p>&nbsp;</p>
+        </section>
+        
+		<hr class="divider">
+		
+		
+        <!-- Header
+		============================ -->
+        <section id="idocs_header">
+		  <h2>导入数据</h2>
+          <p class="lead mb-5">导入 Excel报表 (xlsx, xls), CSV 数据表, TXT 数据表</p>
+          <h3>开始</h3>
+          <h5>1. 上传报表文件</h5>
+          <p>在「导入」页面，单击上传报表按钮。</p>
+          <p><img src="assets/helper-images/001.png" alt="" width="400" height="182" class="img-fluid border"></p>
+          <p>选取需要上传的文件。按「确定」按钮，系统将会自动处理这个文件。          </p>
+          <p>&nbsp;</p>
+          <h5>2. 选择要使用的表</h5>
+          <p><img src="assets/helper-images/002.png" alt="" width="600" height="587" class="img-fluid border"></p>
+          <p>单击上方需要使用的表的名称，系统将自动读取这张表。对于 非 Excel 表格，因为只有一张表，所以直接点击 唯一的 Sheet1 即可。</p>
+          <p>读取完毕后，点击「确定使用该表」 。</p>
+          <h5>3. 选择操作类型</h5>
+          <p>系统提供 3 个导入方式和 1 个企业名称检查功能:</p>
+          <li>上传公司名单: 本年度的审批对象</li>
+          <li>报表含有结论列: 报表是一份名单，只含有<strong>企业名称</strong></li>
+          <li>报表不含结论列: 报表是一份数据表，含有<strong>企业名称</strong>和数据</li>
+          <li>核查企业名称: <strong>报表在上传之前</strong>，如有必要，可用这个功能排查输入有误的企业，降低错误率</li>
+          <p>&nbsp;</p>
+          <p><img src="assets/helper-images/087.png" alt="" width="700" height="394" class="img-fluid border"></p>
+          <p>点击对应的卡片即可选择导入类型。        </p>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Navbar
+		============================ -->
+        <section id="idocs_navbar">
+          <h2>收录公司名单</h2>
+		  <p class="lead">让数据库收录本年度审批企业名单</p>
+		  <h3 class="mt-5">报表准备</h3>
+          <p>需要准备的是<strong>含有公司名称列</strong>的表格，格式不限。</p>
+          <p>* 只要表格内<strong>含有公司名称列</strong>就满足要求，其他无要求。 </p>
+          <p>* 可以分多次分批导入。</p>
+          <p>* 导入后公司名称将被转换为<strong>「半角」</strong>字符。</p>
+          <p>* 这里的用例是「<a href="assets/helper-resources/企业端填写数据.xls">企业端填写数据.xls</a>」</p>
+          <h3 class="mt-5">导入流程</h3>
+          <h5>1-3. 请查看<a href="#idocs_header">上一节</a></h5>
+          <h5>4. 选择「上传公司名单」卡片</h5>
+          <h5>5. 选取<code>含有公司名称的列</code>的列名所在单元格</h5>
+          <p>报表中一定含有一列包含公司名称，请点击这一列的列名，这样就选择了列名所在单元格。例如这里，我们应该点击「申报单位」所在的单元格
+          ：</p>
+          <p><img src="assets/helper-images/004.png" alt="" width="600" height="660" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>点击之后，「申报单位」变为深蓝色，下面的数据变为浅蓝色：</p>
+          <p><img src="assets/helper-images/005.png" alt="" width="600" height="680" class="img-fluid border"></p>
+          <p>这样就完成了选取，按「完成选取」进入下一步。</p>
+          <h5>6. 确认导入</h5>
+          <p><img src="assets/helper-images/006.png" alt="" width="400" height="249" class="img-fluid border"></p>
+          <h5>7. 导入完成</h5>
+          <p><img src="assets/helper-images/007.png" alt="" width="400" height="321" class="img-fluid border"></p>
+          <p>完成后按「确定」按钮，进行其他操作。</p>
+          <p>&nbsp;</p>
+          <h3>视频演示</h3>
+          <video width="1000" height="600" controls="controls" >
+            <source src="assets/helper-videos/公司名称收录.mp4" type="video/mp4">
+          </video>
+          <p>&nbsp;</p>
+        </section>
+		
+		<hr class="divider">
+		  
+		<section id="pre_check">
+			  
+			<h2>核查企业名称：上传前检查</h2>
+			<p>拿到一份报表，为了防止上面的公司信息有误，用户可以先用本功能进行排查。</p>
+			<p>这里的用例是: 「<a href="assets/helper-resources/2016-2018国家高新技术企业.xlsx">2016-2018国家高新技术企业.xlsx</a>」</p>
+			<p>&nbsp;</p>
+			<h6>1. 依然首先上传报表</h6>
+			<h6>2. 选择报表中的一张表</h6>
+			<h6>3. 选择「核查企业名称」卡片			</h6>
+			<p><img src="assets/helper-images/101.png" alt="" width="300" height="1236" class="img-fluid border"></p>
+			<h6>4. 选择公司名称列（必选），如果有补充列，可以一并选上补充列。</h6>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>补充列是指当公司名称未被收录时，可以用来代表这一家公司的那个属性，比如「统一社会信用代码」就可以担当。</p>
+			<p><img src="assets/helper-images/102.png" alt="" width="600" height="1526" class="img-fluid border"></p>
+			<h6>5. 这里使用补充列，（不使用补充列的话，请看后续章节）下面指定指定哪个是补充列。</h6>
+			<p><img src="assets/helper-images/091.png" alt="" width="500" height="974" class="img-fluid border"></p>
+			<p>选择好之后，就按「下一步」按钮。</p>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>这里台账列中有一列为「统一社会信用代码」，报表中有一列为「统一社会信用代码」，这是两个不同体系中的列，但是都代表「统一社会信用代码」，所以可以用它来做查找。</p>
+			<h6>6. 进入查找页面。</h6>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>这里提供了两种查找方式，第二种更加准确，第一种是在缺乏补充列的时候的唯一查找方法。</p>
+			<p><img src="assets/helper-images/092.png" alt="" width="600" height="545" class="img-fluid border"></p>
+			<p>选择你想使用的查找方法。点击对应按钮。这里先试一下「使用补充列进行匹配」。</p>
+			<p><img src="assets/helper-images/093.png" alt="" width="400" height="45" class="img-fluid border"></p>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>根据查找结果，你的报表会被按公司分成三部分，其中的数据没有被更改。</p>
+			<h6>7. 查找结果</h6>
+			<p>结果文件列表中出现了三个文件。			</p>
+			<p><img src="assets/helper-images/095.png" alt="" width="600" height="477" class="img-fluid border"></p>
+			<p><strong>A</strong> 第一个中包含了已被收录的企业部分。这部分数据下载下来之后，可以直接导入数据库。如下图：</p>
+			<p><img src="assets/helper-images/096.png" alt="" width="800" height="533" class="img-fluid border"></p>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>其中的数据没有任何修改，只是把已被收录的企业拿出来了。</p>
+			<p><strong>B</strong> 第二个中包含了没有被收录但有极大可能写错了名称，这部分需要人工校对。</p>
+			<p><img src="assets/helper-images/097.png" alt="" width="800" height="533" class="img-fluid border"></p>
+			<p>这张表只是多增加了紫色这一列。数据部分没有任何更改。</p>
+			<p>这一列是按照「统一社会信用代码」作为补充列查找出来的公司名称。就是说这个表内的公司，都是写错了名字导致没有匹配上，但是用补充列能匹配上的公司。</p>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>如果是报表中写错了名称，那么用匹配出来的公司名称，替换掉原有公司名称就可以了。结果如下：</p>
+			<p><img src="assets/helper-images/106.png" alt="" width="800" height="137" class="img-fluid border"></p>
+			<p>&nbsp;</p>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>如果不认可某个匹配结果，可以直接把这个结果整行删除。</p>
+			<p><img src="assets/helper-images/107.png" alt="" width="800" height="76" class="img-fluid border"></p>
+			<p>&nbsp;</p>
+			<p><span class="badge badge-danger text-uppercase mr-2">Note</span>如果是公司自身申报时写错了名称，那么就要去「勘误」页面，<a href="#idocs_tough_question">修改台账中的公司名称</a>，修改好了之后，在这张表格中就不用做更改了。</p>
+			<p><img src="assets/helper-images/108.png" alt="" width="800" height="42" class="img-fluid border"></p>
+		  <p>这样全都处理好之后，</p>
+			<p>保存，然后<strong>正常导入数据</strong>就可以了。</p>
+			<p>&nbsp;</p>
+			<p><strong>C</strong> 第三个中包含的是依然没有匹配上的公司，理论上说，这些数据就可以放弃了，它们确实没有被台账收录，无需导入。</p>
+			<p><img src="assets/helper-images/100.png" alt="" width="800" height="533" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+			<h6>8. 使用相似度查找</h6>
+			<p>按下「使用相似度查找」，就可以利用公司名称的相似性，去查找最有可能是同一家公司的几个名字。</p>
+		  <p>同样会返回三个文件：</p>
+		  <p><strong>A </strong>可以直接导入的文件，下载后按照正常导入流程导入即可。 </p>
+		  <p><img src="assets/helper-images/096.png" alt="" width="800" height="533" class="img-fluid border"></p>
+		  <p><strong>B</strong> 未被收录但是通过相似度能够匹配上的部分：</p>
+		  <p><img src="assets/helper-images/099.png" alt="" width="800" height="533" class="img-fluid border"></p>
+		  <p>这张表只是多增加了紫色这一列。数据部分没有任何更改。</p>
+          <p>这一列是按照名称相似度查找出来的公司名称。就是说这个表内的公司，都是写错了名字导致没有匹配上，但是用相似度能匹配上的公司。</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>如果是报表中写错了名称，那么用匹配出来的公司名称，替换掉原有公司名称就可以了。结果如下：</p>
+          <p><img src="assets/helper-images/109.png" alt="" width="800" height="35" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>如果不认可某个匹配结果，可以直接把这个结果整行删除。</p>
+          <p><img src="assets/helper-images/111.png" alt="" width="800" height="34" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>如果是公司自身申报时写错了名称，那么就要去「勘误」页面，<a href="#idocs_tough_question">修改台账中的公司名称</a>，修改好了之后，在这张表格中就不用做更改了。</p>
+          <p><img src="assets/helper-images/110.png" alt="" width="800" height="59" class="img-fluid border"></p>
+          <p>这样全都处理好之后，</p>
+          <p>保存，然后<strong>正常导入数据</strong>就可以了。</p>
+          <p>&nbsp;</p>
+          <p><strong>C</strong> 第三个中包含的是依然没有匹配上的公司，这些数据可以放弃了，它们确实没有被台账收录，无需导入。</p>
+          <p><img src="assets/helper-images/100.png" alt="" width="800" height="533" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <h3>视频教学</h3>
+          <video width="1000" height="600" controls="controls" >
+            <source src="assets/helper-videos/企业名称核查.mp4" type="video/mp4">
+          </video>
+          <p>&nbsp;</p>
+          <p></p>
+			
+		</section>
+		  
+		  <hr class="divider">
+		
+		<!-- Sidebar
+		============================ -->
+        <section id="idocs_sidebar">
+          <h2>报表中不含结论列</h2>
+          <p><span class="lead">报表是一份名单，含有公司名称</span></p>
+          <h3 class="mt-5">报表准备</h3>
+          <p>需要准备的是<strong>含有公司名称列</strong>的表格，格式不限。</p>
+          <p>* 只要表格内<strong>含有公司名称列</strong>就满足要求，其他无要求。 </p>
+          <p>* 可以分多次分批导入。</p>
+          <p>* 公司名称可以是「全角」，也可以是「半角」，因为最终都会被转换为「半角」。</p>
+          <p>* 这里的用例是 「<a href="assets/helper-resources/2016-2018国家高新技术企业.xlsx">2016-2018国家高新技术企业.xlsx</a>」</p>
+          <h3 class="mt-5">导入流程</h3>
+          <h5>1-3. 请查看<a href="#idocs_header">上一节</a></h5>
+          <h5>4. 选择「报表不含结论列」卡片</h5>
+          <h5>5. 选取<code>含有公司名称的列</code>的列名所在单元格</h5>
+          <p>报表中一定含有一列包含公司名称，请点击这一列的列名，这样就选择了列名所在单元格。例如这里，我们应该点击「企业名称」所在的单元格
+          ：</p>
+          <p><img src="assets/helper-images/010.png" alt="" width="700" height="1534" class="img-fluid border"></p>
+          <p>点击之后，「企业名称」变为深蓝色，下面的数据变为浅蓝色：</p>
+          <p><img src="assets/helper-images/011.png" alt="" width="700" height="1528" class="img-fluid border"></p>
+          <p>这样就完成了选取，按「完成选取」进入下一步。</p>
+          <h5>6. 选择被赋值的列 并 给出赋值</h5>
+          <p><img src="assets/helper-images/012.png" alt="" width="800" height="852" class="img-fluid border"></p>
+          <p>这份报表中的企业都是国家高新技术企业，所以我们这次导入的目的是，让台账中的这些企业，在「是否国高或市高」这一列都得到「是」的结论。所以，我们应该这样填写：</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th width="14%" scope="col">被赋值的列</th>
+                <th width="18%" scope="col">赋值为</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">在下拉框中选择「是否过高或市高」</th>
+                <td>填写「是」</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>以上操作后会看到：</p>
+          <p><img src="assets/helper-images/014.png" alt="" width="600" height="814" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>*「台账列中此列的默认值」只是一个提示，告诉用户这列如果不被赋值，它本来的值是多少。
+</p>
+          <p>&nbsp; </p>
+          <h5>7. 检查可行性          </h5>
+          <p>点击「检查可行性」按钮，此处将检查：</p>
+		  <p> <strong>报表中的公司是否已经被数据库收录</strong></p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>只有被收录的公司才会被处理。</p>
+		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>因为在<strong>正式导入之前</strong>已经提供了检查公司名称的功能，所以在这里，未被收录的公司会直接<strong>默认放弃不导入</strong>。</p>
+		  <p>&nbsp;</p>
+		  <p><img src="assets/helper-images/090.png" alt="" width="500" height="404" class="img-fluid border"></p>
+		  <p>&nbsp;</p>
+		  <h5>8. 确定导入</h5>
+        <p>点击「确认导入」按钮，系统开始把数据导入数据库。</p>
+		<h5>9. 结果</h5>
+		<p><img src="assets/helper-images/016.png" alt="" width="600" height="742" class="img-fluid border"></p>
+        <p><span class="badge badge-danger text-uppercase mr-2">Note</span>有效数据会成功导入。</p>
+        <p>&nbsp;</p>
+        <h3>视频教学</h3>
+        <video width="1000" height="600" controls="controls" >
+          <source src="assets/helper-videos/报表不含结论列.mp4" type="video/mp4">
+        </video>
+        <p>&nbsp;</p>
+		  <section id="checking_list_compnay"></section>
+
+        </section>
+		
+		<hr class="divider">
+		
+        <!-- Footer
+		============================ -->
+        <section id="idocs_footer">
+          <h2>C 报表中含结论列</h2>
+          <p><span class="lead">报表是数据表，含有公司名称和公司的其他数据，有对应关系</span></p>
+          <h3 class="mt-5">报表准备</h3>
+          <p>需要准备的是<strong>含有公司名称列</strong>的表格，格式不限。</p>
+          <p>* 只要表格内<strong>含有公司名称</strong>就满足要求，其他无要求。 </p>
+          <p>* 可以分多次分批导入。</p>
+          <p>* 公司名称可以是「全角」，也可以是「半角」，因为最终都会被转换为「半角」。</p>
+          <p>* 这里的用例是 「<a href="assets/helper-resources/2019年企业研究开发资助企业端信息（公司名称+机构代码+申报金额）.xls">2019年企业研究开发资助企业端信息（公司名称+机构代码+申报金额）.xls</a>」</p>
+          <h3 class="mt-5">导入流程</h3>
+          <h5>1-3. 请查看<a href="#idocs_header">上一节</a></h5>
+          <h5>4. 选择「报表含结论列」卡片</h5>
+          <h5>5. 选取<code>含有公司名称的列</code>的列名所在单元格</h5>
+          <p>报表中一定含有一列包含公司名称，请点击这一列的列名，这样就选择了列名所在单元格。例如这里，我们应该点击「申报单位」所在的单元格
+            ：</p>
+          <p><img src="assets/helper-images/017.png" alt="" width="700" height="1544" class="img-fluid border"></p>
+          <p>这里企业名称列应为「申报单位」，所以选择「申报单位」为公司名称列的列名所在单元格：</p>
+          <p><img src="assets/helper-images/018.png" alt="" width="700" height="1554" class="img-fluid border"></p>
+          <p>选择完成后，点击「完成选取」按钮进入下一步。</p>
+          <h5>6. 选择数据列</h5>
+          <p>现在选择需要导入的<strong>数据列</strong>的<strong>列名所在单元格</strong>。</p>
+          <p><img src="assets/helper-images/019.png" alt="" width="700" height="1432" class="img-fluid border"></p>
+          <p>这里我们想要导入的数据列是「上年度研发费用合计」，所以在这里选取「上年度研发费用合计」所在单元格。</p>
+          <p><img src="assets/helper-images/020.png" alt="" width="700" height="1416" class="img-fluid border"></p>
+          <p>点击「完成选取」按钮进入下一步。</p>
+          <h5>7. 指定对应关系</h5>
+          <p>这个问题应该被表述为：<strong>报表中的列</strong>对应着<strong>台账中</strong>的哪一列。用户应该在这里指定这个对应关系。</p>
+          <p><img src="assets/helper-images/024.png" alt="" width="700" height="730" class="img-fluid border"></p>
+          <p>这里，我们看到，因为报表文件是企业自行填报的表，所以这里面的研发经费应该是企业自主申报的研发经费，所以我们在右边下拉框中选择「企业申报研发费用（万元）」。</p>
+          <p>操作完毕后，点击「检查可行性」按钮。</p>
+          <h5>8. 检查可行性          </h5>
+          <p>按下按钮后，若没有发现不合法数据，结果应显示出 有效数据的条数和无效数据的条数。这里，全部数据都有效。</p>
+          <p><img src="assets/helper-images/022.png" alt="" width="700" height="496" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>这里出现 4 家未收录企业，在这里会直接默认放弃导入这 4 家企业。因为在导入之前提供了「核查企业名单」功能，这个问题应该在「核查企业名单」中得到解决，而不是在这里。</p>
+          <p>&nbsp;</p>
+          <p>这时，可以点击刚刚出现的「仅导入有效数据」按钮，系统开始导入数据到数据库。</p>
+          <h5>9. 结果</h5>
+          <p><img src="assets/helper-images/023.png" alt="" width="400" height="293" class="img-fluid border"></p>
+          <p>按「完成」按钮，进行其他操作。</p>
+          <p>&nbsp;</p>
+          <h5>10. 若出现无效数据</h5>
+          <h6>10.1 产生无效数据</h6>
+          <p>下面指出当出现无效数据应该如何处理：</p>
+          <p><img src="assets/helper-images/112.png" alt="" width="600" height="232" class="img-fluid border"></p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>这里报表中存在7933条无效数据，其中，部分为缺失数据，部分为不符合格式要求的数据。</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>对于有效数据，在页面上确定导入，就可以完成导入，下面来处理无效数据。</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span>注意，只要一个企业的<strong>某一个数据</strong>有问题，<strong>整个企业的数据都不会被导入</strong>，会被截取下来返回一个「数据核对名单」，补全后，才能正常上传。</p>
+          <p>系统将提供一份「数据核对名单」，请点击按钮下载。</p>
+          <p>&nbsp;</p>
+          <h6>10.2 下载核对名单</h6>
+          <p>这时可以查看刚刚下载的核对名单 (以 Excel 表格的形式)：</p>
+          <p><img src="assets/helper-images/026.png" alt="" width="800" height="533" class="img-fluid border"></p>
+          <p>可见，检查列表中给出了「企业名称」列，「上年度研发费用合计-&gt;企业申报研发费用（万元）」列，「警告原因」列。</p>
+          <p><span class="badge badge-danger text-uppercase mr-2">Note</span><strong>只有数据产生警告的企业</strong>被列入到了这张核对名单上。</p>
+          <p>&nbsp;</p>
+          <p>表格中各个元素的含义为：          </p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th width="14%" scope="col">元素</th>
+                <th width="18%" scope="col">含义</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">「上年度研发费用合计-&gt;企业申报研发费用（万元）」</th>
+                <td>代表导入过程中的一组对应关系。</td>
+              </tr>
+              <tr>
+                <th scope="row">「上年度研发费用合计」</th>
+                <td>代表报表中的一个列名。</td>
+              </tr>
+              <tr>
+                <th scope="row">「企业申报研发费用（万元」</th>
+                <td>代表相应的台账列的列名。</td>
+              </tr>
+              <tr>
+                <th scope="row">「-&gt;」</th>
+                <td>代表导入过程中的对应关系。</td>
+              </tr>
+              <tr>
+                <th scope="row">警告原因</th>
+                <td>产生警告的具体问题（文字说明）。</td>
+              </tr>
+              <tr>
+                <th scope="row">紫色方块</th>
+                <td>涂成紫色的方块代表<strong>这一个单元格</strong>中的数据<strong>存在问题</strong>，需要重新填写或补全；其中的内容为其<strong>原本内容</strong>，<strong>系统没有做任何更改</strong>。</td>
+              </tr>
+              <tr>
+                <th scope="row">出现的公司</th>
+                <td>只有出现不合格数据的公司会出现在这张名单上，并且在<strong>这次导入中</strong>这些公司<strong>所有的数据均没有被导入。</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <h6>10.3 将此名单传回数据提供方，要求其将名单填写完整，或自行补全</h6>
+          <h6>10.4 对方补全数据，用同样的方式把这份核对名单导入到本系统，方可导入完成</h6>
+          <h6>10.5 <span class="badge badge-danger text-uppercase mr-2">Note</span>若确认了该数据确实需要留空，那么请在核对列表中填写台账列的默认值，并思考这样写，之后会不会出现问题。        </h6>
+          <p>&nbsp;</p>
+          <h3>视频教学</h3>
+          <video width="1000" height="600" controls="controls" >
+            <source src="assets/helper-videos/报表含结论列.mp4" type="video/mp4">
+          </video>
+          <p>&nbsp;</p>
+          <video width="1000" height="600" controls="controls" >
+            <source src="assets/helper-videos/导入企业基本信息.mp4" type="video/mp4">
+          </video>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Box Layout Style
+		============================ -->
+        <section id="idocs_box_layout">
+          <h2>数据格式</h2>
+          <div>
+            <p><span class="badge badge-danger text-uppercase mr-2">Note</span>上传的报表中，数据的类型一定要和台账列中定义的一致。</p>
+            <p>比如，已经定义了台账中「企业申报研发经费」这一列为「数值型」，那么报表中相应的列中的数据一定要是「数值型」，不可以出现汉字或其他。</p>
+            <p><strong><span class="badge badge-danger text-uppercase mr-2">Note</span>即使是缺失数据，也要用对应的「数值型」来表示，比如，一家企业没有申报研发费用，那么不可以写「未申报」，而应该写「0」，</strong>也就是这一列的默认值。</p>
+            <p><strong>正确的数据格式对于系统正常运行至关重要。</strong></p>
+          </div>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Content
+		============================ -->
+        <section id="idocs_tough_question">
+          <h2>勘误</h2>
+          <h4>A 修改台账中收录的公司名称</h4>
+          <h6> 1. 打开系统的「勘误」页面</h6>
+          <p><img src="assets/helper-images/039.png" alt="" width="700" height="200" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <h6>2. 看到「更改已收录企业名称」模块，点击<strong>「开始更改」</strong>按钮。</h6>
+          <p>然后选择要更改的企业名称，假设这里查实了「深圳市盛天商业机器有限公司」申报时自己拼错了，那么，在「更改前名称」处选择这家公司。</p>
+          <p><img src="assets/helper-images/040.png" alt="" width="700" height="275" class="img-fluid border"></p>
+          <p>可以用关键词搜索，在下拉框中选择需要更改的公司即可。</p>
+          <p>&nbsp;</p>
+          <h6>3. 然后在右边「更改后名称」填写更改后的名称：</h6>
+          <p><img src="assets/helper-images/042.png" alt="" width="700" height="246" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <h6>4. 填写好后，按「确认更改」按钮。</h6>
+          <p><img src="assets/helper-images/041.png" alt="" width="700" height="228" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <h6>5. 系统提示更改成功。</h6>
+          <p><img src="assets/helper-images/043.png" alt="" width="200" height="167" class="img-fluid border"></p>
+          <p>&nbsp;</p>
+          <h4>B 修改台账中的数据</h4>
+          <p><strong>本系统不支持单独修改某个企业的数据</strong>，只能通过导入报表的形式来<strong>更新数据</strong>。如果需要更改数据，请先把数据做成一张报表</p>
+          <h6>1. 准备一张 Excel 报表，格式如下：</h6>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th width="14%" scope="col">被更新的企业名称</th>
+                <th width="18%" scope="col">需要更新的列1（如企业申报研发费用）</th>
+                <th width="18%" scope="col">需要更新的列2（如是否国家高新技术企业）</th>
+                <th width="18%" scope="col">...</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">深圳市联合智能卡有限公司</th>
+                <td>120</td>
+                <td>是</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <th scope="row">深圳市华测计量技术有限公司</th>
+                <td>1200</td>
+                <td>否</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <th scope="row">...</th>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong><span class="badge badge-danger text-uppercase mr-2">Note</span></strong>每次修改的列数不宜过多。</p>
+          <p>&nbsp;</p>
+          <h6>2. 然后利用「导入」-「报表含结论列」方式导入到台账中。          </h6>
+          <p>具体步骤请参考上文「导入 - <a href="#idocs_footer">报表含结论列</a>」。</p>
+        </section>
+		
+		<hr class="divider">
+		
+
+		
+        <!-- Components
+		============================ -->
+        <section id="idocs_components">
+          <h2>计算结果        </h2>
+        </section>
+
+        <!-- Accordion
+		  ============================ -->
+	    <section id="idocs_accordion">
+          <h3>计算前检查</h3>
+          <p>启动计算程序之前，如有必要可以先行检查台账中的数据。          </p>
+          <p>打开「勘误」页面，找到「查看台账中现有数据」页面，即可下载台账中现有的全部数据。</p>
+          <p><img src="assets/helper-images/079.png" alt="" width="500" height="165" class="img-fluid border"></p>
+          <p>下载的 Excel 表格中，存在缺失的数据都已经标红。</p>
+          <p><strong><span class="badge badge-danger text-uppercase mr-2">Note</span></strong>如果发现数据存在问题，可以参考「<a href="#idocs_tough_question">勘误</a>」这一节的内容，进行相应修改。          </p>
+          <div class="table-responsive"></div>
+        </section>
+          
+		  <hr class="divider">
+		  
+		  <!-- Tabs
+		  ============================ -->
+		  <section id="idocs_tabs">
+            <h3>生成结果</h3>
+            <p class="text-4">打开「结果」页面，在页面上方找到「更新计算数据」卡片，点击「更新计算数据」按钮，即可自动计算出所有列的结果，包括是否通过审核、资助金额、以及其他结论（取决于用户如何自定义台账列）。            </p>
+            <p class="text-4"><img src="assets/helper-images/080.png" alt="" width="500" height="186" class="img-fluid border"></p>
+            <p class="text-4"><strong><span class="badge badge-danger text-uppercase mr-2">Note</span></strong>计算所花费的时间由<strong>数据量</strong>以及定义的<strong>台账列数量</strong>有关，通常花费时间为一分钟到数分钟不等，请耐心等待结果。</p>
+            <p class="text-4">计算完成后，页面上的相关数据将会及时更新。并且计算完成后会有提示。            </p>
+            <div class="table-responsive"></div>
+          </section>
+          
+		  <hr class="divider">
+		  		  
+          <!-- Social Icon
+		  ============================ -->
+		  <section id="idocs_social_icon">
+            <h3>可视化</h3>
+            <p>可视化。</p>
+            <div class="table-responsive"></div>
+          </section>
+		  
+		  <hr class="divider">
+		  
+		  <!-- Helper Classes
+		  ============================ -->
+        <section id="idocs_helper_classes">
+          <h3>导出台账与报告</h3>
+            <p>在「结果」页面，先运行上述「更新计算数据」，待完成后，在页面底部点击「导出台账为 Excel 表格」，即可得到一份 台账列表格。其中包括了<strong>所有原始数据</strong>、<strong>依赖原始数据得到的新数据</strong>、<strong>审核结论</strong>、<strong>资助金额</strong>、<strong>未通过审核的原因</strong>，以及其他<strong>自定义量</strong>。</p>
+            <p>&nbsp;</p>
+            <h3>视频教学</h3>
+            <video width="1000" height="600" controls="controls" >
+              <source src="assets/helper-videos/生成结果.mp4" type="video/mp4">
+            </video>
+            <p>&nbsp;</p>
+        </section>
+        
+        
+		<hr class="divider">
+		
+		<!-- FAQ
+		============================ -->
+		<section id="idocs_faq">
+          <h2>重置与删除</h2>
+          <h3>系统重置</h3>
+          <p><span class="text-4"><strong><span class="badge badge-danger text-uppercase mr-2">Note</span></strong>系统重置将会删除所有<strong>台账列</strong>的信息和<strong>所有企业数据</strong>。</span></p>
+          <h6>1. 在「设置」页面，点击「系统重置」按钮。</h6>
+          <p><span class="text-4"><img src="assets/helper-images/081.png" alt="" width="600" height="153" class="img-fluid border"></span></p>
+          <h6>2. 在弹出窗口中点击确定。</h6>
+          <p><span class="text-4"><img src="assets/helper-images/082.png" alt="" width="600" height="161" class="img-fluid border"></span></p>
+          <h6>3. 显示数据库已经被清空，现在选择新台账中所需要的台账列。</h6>
+          <p><span class="text-4"><strong><span class="badge badge-danger text-uppercase mr-2">Note</span></strong>系统为用户预置了一些常用台账列，这里列默认都会添加到新台账中。如果不需要某个，可以点击「x」按钮删去，即可不要这个列。</span></p>
+          <p><span class="text-4"><img src="assets/helper-images/083.png" alt="" width="600" height="306" class="img-fluid border"></span></p>
+          <h6>4. 选择完毕，按「确定」按钮。</h6>
+          <p><span class="text-4"><img src="assets/helper-images/084.png" alt="" width="600" height="136" class="img-fluid border"></span></p>
+          <h6>5. 提示完成。</h6>
+          <p>&nbsp;</p>
+          <h3>清空数据</h3>
+          <p><span class="text-4"><strong><span class="badge badge-danger text-uppercase mr-2">Note</span></strong>这将删除台账中的全部数据，但不会删除<strong>台账列</strong>信息。</span></p>
+          <h6>1. 点击「设置」页面的「清空数据」按钮。</h6>
+          <p><span class="text-4"><img src="assets/helper-images/085.png" alt="" width="600" height="97" class="img-fluid border"></span></p>
+          <h6>2. 确认删除。</h6>
+          <p><span class="text-4"><img src="assets/helper-images/086.png" alt="" width="600" height="253" class="img-fluid border"></span></p>
+          <h6>3. 页面刷新，删除成功，发现之前的数据都消失了。</h6>
+          
+		  <div class="row"></div>
+          
+        </section>
+        
+		<hr class="divider">
+        
+        <!-- Source & Credits
+		============================ -->
+		  
+		<section id="idocs_source_credits">
+          <h2>日志记录</h2>
+          <p>本系统内置了用户操作收集功能，所有用户操作都会被如实记录，并存储到数据库中，供查阅。要查阅日志，请打开「日志」页面，即可查看。</p>
+        </section>
+        
+		
+		
+		<hr class="divider">
+		  
+		  <section id="idocs_support">
+			  <h2>用户管理 </h2>
+		    <p>本系统尚未有用户管理功能。只能用现有账号登录。</p>
+	    </section>
+		
+		
+		
+		<!-- More Templates
+		============================ -->
+        <section id="idocs_templates">
+          <div class="row"></div>
+        </section>
+		
+		<hr class="divider">
+		
+            
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        <li></li>
+      </ul>
+      <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
